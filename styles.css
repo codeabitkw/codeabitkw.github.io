@@ -30,9 +30,10 @@
 }
 
 body {
-    background-color: rgb(67, 94, 15);
+    background-color: #c39b0b;
     font-family: 'Phantom Sans';
     color: whitesmoke;
+    margin: 0
 }
 
 p {
@@ -44,6 +45,31 @@ p {
     margin-right: auto;
     margin-left: auto;
     width: 30%;
+}
+
+#screen #join {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#screen #join #join-button {
+    align-self: center;
+    background-color: #00501f;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#screen #join #join-button:hover {
+    background-color: #00501fde;
+}
+
+#screen #join #join-button:focus {
+    background-color: #00501fde;
 }
 
 #screen #top {
@@ -83,16 +109,38 @@ p {
     margin-left: 9px;
 }
 
+footer {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #2424248f;
+    height: 100px;
+}
+
+footer #links {
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+}
+
 @media only screen and (max-width: 768px) {
     #screen {
         margin-top: 150px;
         width: 90%;
     }
+
+    footer #links {
+        width: 90%;
+    }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1068px) {
+@media only screen and (min-width: 768px) and (max-width: 1268px) {
     #screen {
         margin-top: 150px;
+        width: 60%;
+    }
+
+    footer #links {
         width: 60%;
     }
 }
