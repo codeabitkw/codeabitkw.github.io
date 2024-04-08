@@ -38,6 +38,8 @@ body {
 
 p {
     font-size: 21px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #screen {
